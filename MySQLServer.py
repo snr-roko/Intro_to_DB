@@ -4,9 +4,9 @@ try:
   book_store_db = mysql.connector.connect(
   host= 'localhost',
   user= 'root',
-  passwd = 'MrRoko@0405',
+  passwd = '#############',
 )
-except Exception:
+except mysql.connector.Error:
   print("Database could not connect, Please check your logins")
 else:
   book_store_db_cursor = book_store_db.cursor()
