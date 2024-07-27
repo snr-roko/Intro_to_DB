@@ -1,4 +1,7 @@
 CREATE DATABASE IF NOT EXISTS alx_book_store;
+
+\use alx_book_store;
+
 CREATE TABLE Books (
     book_id INT AUTO_INCREMENT PRIMARY KEY, 
     title VARCHAR(130) NOT NULL, 
